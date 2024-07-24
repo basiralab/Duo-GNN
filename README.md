@@ -1,1 +1,1 @@
-# Duo-GNN
+# DuoGNN
