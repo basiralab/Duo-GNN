@@ -7,10 +7,10 @@ Created on 23 July 2024
 import data.databases as datasets
 import torch
 import numpy as np
-import models.my_gcn_model as gcn_model
-import models.my_dual_gcn_model as dual_gcn_model
-import models.my_gin_model as gin_model
-import models.my_gat_model as gat_model
+import models.gcn_model as gcn_model
+import models.dual_gnn_model as dual_gnn_model
+import models.gin_model as gin_model
+import models.gat_model as gat_model
 import train.train_multi_class_classification as train
 import results.writer as writer
 import argparse
@@ -226,7 +226,7 @@ test_mask = torch.tensor(test_mask)
 
 #%% Preparing Model
 if model_type == "DualGCN":
-        model = dual_gcn_model.DualGCN(hidden_channels=hidden_channels, num_layers= layers, 
+        model = dual_gnn_model.DualGCN(hidden_channels=hidden_channels, num_layers= layers, 
                         in_channels= x_train.shape[1], out_channels=num_classes, 
                         batch_norm=batch_norm, dropout=dropout, residual=residual,
                         max_communities=max_communities)

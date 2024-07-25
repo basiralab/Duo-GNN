@@ -1,9 +1,9 @@
 
 
 # DuoGNN: Topology-aware Graph Neural Network with Homophily and Heterophily Interaction-Decoupling
-This repository is part of a workshop paper published in MICCAI ([GRAIL 2024](https://grail-miccai.github.io)). It contains the main source code for our proposed topological-aware architecture with interaction-decoupling stage and a GNN benchmark implementing well-known baselines such as GCN, GIN, and GAT. Additionally, the [data](./data/) directory has a data generator script to convert the medical image datasets MedMNIST Organ-C and Organ-S into graphs. Follows an overview of the structure of DuoGNN:
+This repository is part of a workshop paper published in MICCAI ([GRAIL 2024](https://grail-miccai.github.io)). It contains the main source code for our proposed topological-aware architecture with interaction-decoupling stage and a GNN benchmark implementing well-known baselines such as GCN, GIN, and GAT. Additionally, the [data](./data/) directory has a data generator script to convert the medical image datasets MedMNIST Organ-C and Organ-S into graphs. Follows an overview of the structure of the repository:
 
-![DuoGNN Architecture](images/flow_model.png)
+![Repository Structure](images/repo_structure.png)
 
 
 <br>
@@ -134,11 +134,11 @@ python main_multilabel_classification.py --dataset_name Organ-S --batch_norm --d
 For quicker tests, you can use the provided script file. Alternatively, modify this script or create new ones as needed.
 
 ```bash
-# Navigate to the project directory and execute a test script
-bash scripts/test/run_light_test.sh
+# Navigate to the main directory and execute a test script
+bash scripts/run_light_test.sh
 ```
 
-Review [`run_light_test.sh`](../scripts/test/run_light_test.sh) to understand the script’s setup and adjust it according to your needs.
+Review [`run_light_test.sh`](../scripts/run_light_test.sh) to understand the script’s setup and adjust it according to your needs.
 
 ### 3.3 Output Results
 
