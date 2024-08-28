@@ -66,7 +66,7 @@ After installing CUDA, you will set up the Python environment and install additi
 # Clone the GitHub repository containing the benchmark code
 conda install git
 git clone https://github.com/basiralab/DuoGNN.git
-cd gnn_benchmark
+cd DuoGNN
 
 # Create and install the Python environment for GPU
 conda env create -f config/environment_gpu.yml 
