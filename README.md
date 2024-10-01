@@ -183,7 +183,7 @@ If you are using an older version of the `GraphRicciCurvature` library, you migh
 ## 5. Reference 
 Please cite the following paper when using DuoGNN:
 
-TODO: Add paper
+[https://arxiv.org/abs/2409.19616](https://arxiv.org/abs/2409.19616)
 
 <br><br><br>
 
